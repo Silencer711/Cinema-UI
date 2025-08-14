@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"version": "0.7.0",
 	"id": "Silencer711.CinemaUI",
 	"name": "Cinema UI",
