@@ -1,9 +1,154 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"version": "0.7.0",
+	"id": "Silencer711.CinemaUI",
+	"name": "Cinema UI",
+	"description": "A user interface (UI) visuals overhaul mod for Hitman: World of Assassination (WoA).",
+	"authors": ["Silencer711"],
+	"frameworkVersion": "2.33.26",
+	"loadAfter": ["BurnTheWitch.HeritageUI"],
+	"options": [
+		{
+			"name": "OFF (Game Default)",
+			"tooltip": "The default attraction screen for Hitman: World of Assasination (2023).",
+			"image": "framework content/bootLogo_default.png",
+			"type": "select",
+			"group": "Boot Logo"
+		},
+		{
+			"name": "Hitman WoA| Hybrid",
+			"enabledByDefault": true,
+			"tooltip": "A hybrid Hitman 3: World of Assassination logo.",
+			"image": "framework content/bootLogo_h3woaHybrid.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod content/bootLogo/h3/woaHybrid"]
+		},
+		{
+			"name": "Hitman 3| Classic",
+			"tooltip": "The original Hitman 3 (2021) logo.",
+			"image": "framework content/bootLogo_h3classic.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod content/bootLogo/h3/classic"]
+		},
+		{
+			"name": "2007 Movie",
+			"tooltip": "The custom movie logo from Hitman (2007 movie).",
+			"image": "framework content/bootLogo_2007movie.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod content/bootLogo/2007movie"]
+		},
+		{
+			"name": "OFF (Game Default)",
+			"tooltip": "The default attraction screen for Hitman: World of Assasination (2023).",
+			"image": "framework content/attractionScreen_default.jpg",
+			"type": "select",
+			"group": "Attraction Screen"
+		},
+		{
+			"name": "Hitman WoA| Signature",
+			"tooltip": "The 'signature edition' attraction screen from Hitman: WoA's release on the Ninten'DONT' switch 2 (2025).",
+			"image": "framework content/attractionScreen_h3woaSigEd.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod content/attractionScreen/h3/woaSigEd/blobs"]
+		},
+		{
+			"name": "World Map| Red (47)",
+			"enabledByDefault": true,
+			"tooltip": "A custom Hitman 3: WoA attraction screen made for the release of Cinema UI.",
+			"image": "framework content/attractionScreen_worldMapRed47.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod content/attractionScreen/worldMapRed47/blobs"]
+		},
+		{
+			"name": "H3| Classic",
+			"tooltip": "Hitman 3's attraction screen as it was in 2021.",
+			"image": "framework content/attractionScreen_h3classic.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod content/attractionScreen/h3/classic/blobs"]
+		},
+		{
+			"name": "H3| Full-Size",
+			"tooltip": "Hitman 3's attraction screen full-size and zoomed out more.",
+			"image": "framework content/attractionScreen_h3fullsize.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod content/attractionScreen/h3/fullsize/blobs"]
+		},
+		{
+			"name": "Sniper 47",
+			"tooltip": "Hitman 3's sniper game mode image as your attraction screen.",
+			"image": "framework content/attractionScreen_h3sniper47.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod content/attractionScreen/h3/sniper47/blobs"]
+		},
+		{
+			"name": "OFF (Game Default)",
+			"tooltip": "The default main menu background.",
+			"image": "framework content/mainMenuBG_default.jpg",
+			"type": "select",
+			"group": "Main Menu Background"
+		},
+		{
+			"name": "World Map| Blue (Night)",
+			"tooltip": "Made for the release of Cinema UI. A low-light environment blue world map with blurred lines in 4K resolution.",
+			"image": "framework content/mainMenuBG_worldMapBlueNight.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod content/mainMenuBGs/worldMapBlueNight/blobs"]
+		},
+		{
+			"name": "World Map| Red (Strategic)",
+			"tooltip": "Made for the release of Cinema UI. A brighter-red world map in strategic-view, artistically-darkened with blurred lines in 4K resolution.",
+			"image": "framework content/mainMenuBG_worldMapRedStrat.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod content/mainMenuBGs/worldMapRedStrat/blobs"]
+		},
+		{
+			"name": "Heritage UI| Redux v2",
+			"tooltip": "A reborn version of Heritage UI (HUI)'s custom ''Redux'' main menu background in 4K resolution.",
+			"image": "framework content/mainMenuBG_huiReduxV2.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod content/mainMenuBGs/HUIreduxV2/blobs"]
+		},
+		{
+			"name": "OFF (Game Default)",
+			"tooltip": "The default low-fidelity destination backgrounds.",
+			"image": "framework content/destinationBG_default.jpg",
+			"type": "select",
+			"group": "Destination Backgrounds"
+		},
+		{
+			"name": "Upscaled Only",
+			"tooltip": "Upscaled x4, downscaled again back to 1440p, and cleaned up during the process.",
+			"image": "framework content/destinationBG_upscaledOnly.jpg",
+			"type": "select",
+			"group": "Destination Backgrounds",
+			"blobsFolders": ["mod content/destinationBGs/upscaledOnly/blobs"]
+		},
+		{
+			"name": "Colorful",
+			"enabledByDefault": true,
+			"tooltip": "Images are upscaled and have made more colorful and vibrant.",
+			"image": "framework content/destinationBG_colorful.jpg",
+			"type": "select",
+			"group": "Destination Backgrounds",
+			"blobsFolders": ["mod content/destinationBGs/colorful/blobs"]
+		},
+		{
+			"name": "Realistic",
+			"tooltip": "Images are upscaled and have made closer to reality in color and lighting. ",
+			"image": "framework content/destinationBG_realistic.jpg",
+			"type": "select",
+			"group": "Destination Backgrounds",
+			"blobsFolders": ["mod content/destinationBGs/realistic/blobs"]
+		}
+	]
 }
