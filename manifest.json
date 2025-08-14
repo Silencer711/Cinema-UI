@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.7.0",
+	"version": "0.2.0",
 	"id": "Silencer711.CinemaUI",
 	"name": "Cinema UI",
 	"description": "A user interface (UI) visuals overhaul mod for Hitman: World of Assassination (WoA).",
@@ -151,5 +151,6 @@
 			"group": "Destination Backgrounds",
 			"blobsFolders": ["mod content/destinationBGs/realistic/blobs"]
 		}
-	]
+	],
+	"updateCheck": "https://github.com/Silencer711/Cinema-UI/releases/latest/download/updates.json"
 }
